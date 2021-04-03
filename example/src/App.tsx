@@ -1,10 +1,21 @@
 import React from 'react'
-
-import { ExampleComponent } from 'redux-action-trace'
-import 'redux-action-trace/dist/index.css'
+import { updateCurrentUser } from './actions'
+import { useDispatch } from 'react-redux'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  const dispatch = useDispatch()
+
+  return (
+    <div>
+      <button
+        onClick={async () => {
+          dispatch(updateCurrentUser())
+        }}
+      >
+        hello
+      </button>
+    </div>
+  )
 }
 
 export default App

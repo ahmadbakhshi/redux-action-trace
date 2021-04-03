@@ -1,7 +1,7 @@
 {
   "name": "redux-action-trace",
-  "version": "1.0.0",
-  "description": "Made with create-react-library",
+  "version": "1.0.1",
+  "description": "redux-action-trace helps you to trace your redux actions and provides you the action name, caller file name and caller line number.",
   "author": "ahmadbakhshi",
   "license": "MIT",
   "repository": "ahmadbakhshi/redux-action-trace",
