@@ -1,1 +1,1 @@
-export { reduxActionTrace } from "./app/logger"
+export { reduxActionTrace } from './services/logger'
