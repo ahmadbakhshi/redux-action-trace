@@ -1,6 +1,6 @@
-export const updateCurrentUser = () => async (dispatch: any) => {
+export const updateState = () => async (dispatch: any) => {
   dispatch({
     type: 'test',
-    payload: null
+    payload: { id: 1 }
   })
 }
