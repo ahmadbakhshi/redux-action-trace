@@ -20,11 +20,13 @@
     "redux": "^4.0.5",
     "redux-action-trace": "link:..",
     "redux-devtools-extension": "^2.13.9",
+    "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
     "typescript": "link:../node_modules/typescript"
   },
   "devDependencies": {
-    "@babel/plugin-syntax-object-rest-spread": "^7.8.3"
+    "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
+    "@types/redux-logger": "^3.0.8"
   },
   "eslintConfig": {
     "extends": "react-app"

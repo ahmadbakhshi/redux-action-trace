@@ -1,9 +1,5 @@
 const initialState: any = {
-  type: null,
-  message: '',
-  displayPopUpMessage: false,
-  cancel: () => {},
-  confirm: () => {}
+  id: null
 }
 
 export const testReducer = (
