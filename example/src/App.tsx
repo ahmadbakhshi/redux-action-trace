@@ -1,5 +1,5 @@
 import React from 'react'
-import { updateCurrentUser } from './actions'
+import { updateState } from './actions'
 import { useDispatch } from 'react-redux'
 
 const App = () => {
@@ -7,13 +7,7 @@ const App = () => {
 
   return (
     <div>
-      <button
-        onClick={async () => {
-          dispatch(updateCurrentUser())
-        }}
-      >
-        hello
-      </button>
+      <button onClick={() => dispatch(updateState())}>dispatch</button>
     </div>
   )
 }

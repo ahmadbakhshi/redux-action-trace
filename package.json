@@ -1,6 +1,6 @@
 {
   "name": "redux-action-trace",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "redux-action-trace helps you to trace your redux actions and provides you the action name, caller file name and caller line number.",
   "author": "ahmadbakhshi",
   "license": "MIT",
@@ -24,7 +24,8 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^16.0.0",
+    "redux": "^3.0.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -34,6 +35,7 @@
     "@types/node": "^12.12.38",
     "@types/react": "^16.9.27",
     "@types/react-dom": "^16.9.7",
+    "@types/redux": "^3.6.0",
     "@typescript-eslint/eslint-plugin": "^2.26.0",
     "@typescript-eslint/parser": "^2.26.0",
     "babel-eslint": "^10.0.3",
@@ -55,6 +57,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1",
+    "redux": "^4.0.5",
     "typescript": "^3.7.5"
   },
   "files": [
