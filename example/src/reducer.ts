@@ -1,5 +1,6 @@
 const initialState: any = {
-  id: null
+  id: null,
+  name: 'test'
 }
 
 export const testReducer = (
