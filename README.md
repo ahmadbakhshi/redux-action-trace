@@ -109,6 +109,7 @@ Options (with defaults):
     disable?: boolean
     style?: IStyle
     showDetails?: {
+      collapsed?:boolean
       action?: boolean
       previousState?: boolean
       currentState?: boolean
@@ -117,6 +118,7 @@ Options (with defaults):
     }
 
     default :{
+      collapsed:false,
       action: false,
       previousState: false,
       currentState: false,
@@ -125,6 +127,7 @@ Options (with defaults):
     }
   */
   showDetails: {
+    collapsed:false
     action: true,
     currentState: true,
     previousState: true,
@@ -136,7 +139,7 @@ Options (with defaults):
 
 ## Result
 
-![result](result.png)
+![result](result3.png)
 
 Default
 
