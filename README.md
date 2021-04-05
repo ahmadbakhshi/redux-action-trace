@@ -102,6 +102,34 @@ Options (with defaults):
     actionName: 'color: red; font-size: 24px;',
     path: 'color:blue;',
     lineNumber: 'font-size: 24px'
+  },
+
+  /*
+    {
+    disable?: boolean
+    style?: IStyle
+    showDetails?: {
+      action?: boolean
+      previousState?: boolean
+      currentState?: boolean
+      differences?: boolean
+      order?: 'Action' | 'Previous State' | 'Current State'| 'State Differences' []
+    }
+
+    default :{
+      action: false,
+      previousState: false,
+      currentState: false,
+      differences: false,
+      order: ['Action', 'Previous State' ,'Current State','State Differences']
+    }
+  */
+  showDetails: {
+    action: true,
+    currentState: true,
+    previousState: true,
+    differences: true,
+    order: ['Action', 'Current State', 'Previous State', 'State Differences']
   }
 }
 ```
@@ -109,6 +137,10 @@ Options (with defaults):
 ## Result
 
 ![result](result.png)
+
+Default
+
+![result](result2.png)
 
 "[test]" is the action name.
 

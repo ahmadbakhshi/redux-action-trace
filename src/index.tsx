@@ -1,1 +1,1 @@
-export { reduxActionTrace, config } from './services/logger'
+export { reduxActionTrace, config } from './services/reduxActionTrace'
