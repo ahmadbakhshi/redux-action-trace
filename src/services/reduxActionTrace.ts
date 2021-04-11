@@ -18,9 +18,7 @@ export interface IConfigProps {
 }
 
 // @ts-ignore
-export const reduxActionTrace: Middleware = (store) => (next) => (
-  action
-): Middleware => {
+export const reduxActionTrace = (store) => (next) => (action) => {
   try {
     trace({
       action
@@ -57,11 +55,11 @@ export const config = ({
 
       default:
         reduxActionTrace = (store) => (next) => (action): Middleware => {
-          const currentStateObj = store.getState()
+          const previousStateObj = store.getState()
 
           const result = next(action)
 
-          const previousStateObj = store.getState()
+          const currentStateObj = store.getState()
 
           trace({
             action,
