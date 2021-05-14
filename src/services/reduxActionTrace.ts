@@ -18,7 +18,9 @@ export interface IConfigProps {
 }
 
 // @ts-ignore
-export const reduxActionTrace = (store) => (next) => (action) => {
+export const reduxActionTrace: Middleware = (store) => (next) => (
+  action
+): Middleware => {
   try {
     trace({
       action
