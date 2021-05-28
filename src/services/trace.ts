@@ -74,14 +74,16 @@ export const trace = ({
       !a.file.includes('node_modules')
   )
 
-  const item = filtered.items[filtered.items.length - 1]
+  const item = filtered.items[filtered.items.length - 1] as
+    | StackTracey.Entry
+    | undefined
 
-  const spliced = item.file.split('/')
+  const spliced = item?.file.split('/') ?? []
   const splicedIndex = spliced.findIndex((a) => a === 'src')
   const file = spliced.splice(splicedIndex + 1, spliced.length - 1).join('/')
 
   console.log(
-    `%cRedux Action Trace\n%c[${action.type}] %c${file} %c${item.line}`,
+    `%cRedux Action Trace\n%c[${action.type}] %c${file} %c${item?.line}`,
     'color: #999; font-size: 10px;',
     style.actionName,
     style.path,
